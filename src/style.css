@@ -1,0 +1,136 @@
+.boxsr-fullscreen {
+  background: linear-gradient(180deg, #32283a 47.92%, #a19c8c 100%);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  display: none;
+  font-family: "Helvetica Neue",Helvetica,Arial;
+  font-size: 14px;
+  line-height: 17px;
+  opacity:0;
+  transition: all 1s;
+}
+.boxsr-fullscreen--active,.boxsr-form__step--active {
+  display: block !important;
+}
+.boxsr-fullscreen--opacity, .boxsr-form__step--opacity {
+  opacity:1 !important;
+}
+
+.boxsr-form__step{
+  width: 100%;
+  height: 100%;
+  display: none;
+  opacity:0;
+  transition: all 1s;
+}
+
+
+.boxsr-close {
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  right: 5%;
+  top: 5%;
+  color: #fbfaf6;
+  border: 1px solid #fbfaf6;
+  text-align: center;
+  border-radius: 50%;
+  padding-top: 2px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  cursor: pointer;
+}
+.boxsr-close:before,
+.boxsr-close:after {
+  position: absolute;
+  left: 10px;
+  content: " ";
+  height: 17px;
+  width: 2px;
+  background-color: #fbfaf6;
+}
+.boxsr-close:before {
+  transform: rotate(45deg);
+}
+.boxsr-close:after {
+  transform: rotate(-45deg);
+}
+.boxsr-logo{
+  position: absolute;
+  top: 5%;
+  left: 5%;
+}
+.boxsr-container{
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  max-width: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+}
+.boxsr-container h2{
+  font-size: 36px;
+  line-height: 44px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  /* identical to box height */
+
+}
+
+.boxsr-form__step--hidden{
+  display: none;
+}
+
+
+
+/* FORM STYLE */
+
+.boxsr-form__label, .boxsr-form__input{
+  display:block;
+  margin: 0 auto;
+}
+.boxsr-form__input{
+  background:none;
+  border:0px;
+  border-bottom: 1px solid #94AE86;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  color: #94AE86;
+  text-align: center;
+}
+.boxsr-form__input:focus{
+  outline: none;
+  background: transparent;
+}
+.boxsr-form__input::placeholder{
+  color: #94AE86;
+}
+
+
+/* NAVIGATOR */
+.boxsr-form__navigator {
+  margin-top:20px;
+}
+.boxsr-form__navigator span{
+  width: 40px;
+  height: 40px;
+  color: #fbfaf6;
+  border: 1px solid #fbfaf6;
+  text-align: center;
+  border-radius: 50%;
+  padding-top: 2px;
+  cursor: pointer;
+  padding:10px;
+  margin:10px;
+}
+.boxsr-form__navigator span:hover, .boxsr-close:hover{
+  background: #fbfaf6;
+  color: #32283a;
+}

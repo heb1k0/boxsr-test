@@ -1,0 +1,1 @@
+(()=>{const e=document.querySelector(".boxsr-test");console.log(e),e.addEventListener("click",(()=>{console.log("boxsr-test")}))})();
